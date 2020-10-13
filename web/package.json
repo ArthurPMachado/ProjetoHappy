@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "npx eslint ./src/pages/** ./src/components/** .src/App.tsx .src/index.tsx --fix"
+    "lint": "npx eslint ./src/pages/** ./src/App.tsx ./src/index.tsx --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-leaflet": "^2.5.2",
     "@types/react-router-dom": "^5.1.6",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
