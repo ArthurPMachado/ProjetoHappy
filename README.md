@@ -42,6 +42,8 @@ A aplicação está sendo desenvolvida com o objetivo de facilitar o agendamento
 * [Expo](https://expo.io/)
 * [NodeJs](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com/)
+* [React-Leaflet](https://react-leaflet.js.org/)
+* [MapBox](https://www.mapbox.com/)
 
 # :desktop_computer: Instalação e Execução
 **Antes de iniciar, é necessário ter o [NodeJs](https://nodejs.org/en/) e o [Yarn](https://yarnpkg.com/) baixado na máquina, bem como o aplicativo [Expo](https://expo.io/) no celular para a aplicação mobile**
