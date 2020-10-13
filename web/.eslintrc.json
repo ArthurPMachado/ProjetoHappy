@@ -24,6 +24,5 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "react/jsx-filename-extension": "allow"
     }
 }

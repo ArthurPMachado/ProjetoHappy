@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 
 import logoImg from './assets/images/logo.svg';
@@ -9,7 +10,7 @@ function App() {
   return (
     <div id="page-landing">
       <div className="content-wrapper">
-        <img src={logoImg} alt="Happy"/>
+        <img src={logoImg} alt="Happy" />
 
         <main>
           <h1>Leve felicidade para o mundo</h1>
@@ -20,8 +21,10 @@ function App() {
           <strong>São Paulo</strong>
           <span>São Paulo</span>
 
-          <a href="" className="enter-app"></a>
         </div>
+        <a href="" className="enter-app">
+          geqgeq
+        </a>
       </div>
     </div>
   );
