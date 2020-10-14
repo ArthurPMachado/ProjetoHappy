@@ -35,15 +35,21 @@
 A aplicação está sendo desenvolvida com o objetivo de facilitar o agendamento de visitas à orfanatos, onde a pessoa pode escolher o orfanato pelo mapa e agendar a visita através de um formulário, bem como saber mais detalhes sobre o orfanato. Esse projeto terá uma versão browser e mobile. 
 
 # :clipboard: Tecnologias Utilizadas
+* [Yarn](https://yarnpkg.com/)
+* [NodeJs](https://nodejs.org/en/)
 * [ReactJs](https://reactjs.org/)
 * [React-Native](https://reactnative.dev/)
 * [React-Navigation](https://reactnavigation.org/)
-* [TypeScript](https://www.typescriptlang.org/)
-* [Expo](https://expo.io/)
-* [NodeJs](https://nodejs.org/en/)
-* [Yarn](https://yarnpkg.com/)
 * [React-Leaflet](https://react-leaflet.js.org/)
 * [MapBox](https://www.mapbox.com/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Expo](https://expo.io/)
+* [Express](https://expressjs.com/)
+* [Multer](https://www.npmjs.com/package/multer)
+* [Sqlite3](https://www.sqlite.org/index.html)
+* [TypeORM](https://typeorm.io/#/)
+* [Yup](https://github.com/jquense/yup)
+* [Eslint](https://eslint.org/)
 
 # :desktop_computer: Instalação e Execução
 **Antes de iniciar, é necessário ter o [NodeJs](https://nodejs.org/en/) e o [Yarn](https://yarnpkg.com/) baixado na máquina, bem como o aplicativo [Expo](https://expo.io/) no celular para a aplicação mobile**
