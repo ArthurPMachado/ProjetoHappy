@@ -29,5 +29,13 @@ export default {
     await orphanagesRepository.save(orphanage);
   
     return response.status(201).json(orphanage);
+  },
+
+  async readAll(request: Request, response: Response) {
+    const orphanagesRepository = getRepository(Orphanage);
+
+    const orphanages = await orphanagesRepository.find();
+
+    return response.json(orphanages);
   }
 };
