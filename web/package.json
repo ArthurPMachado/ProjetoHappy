@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "npx eslint ./src/pages/** ./src/App.tsx ./src/index.tsx --fix"
+    "lint": "npx eslint ./src/pages/** ./src/App.tsx ./src/index.tsx ./src/routes.tsx --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
