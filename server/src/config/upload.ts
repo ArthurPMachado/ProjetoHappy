@@ -8,6 +8,6 @@ export default {
       const fileName = `${Date.now()}-${file.originalname}`;
 
       callback(null, fileName);
-    }
-  })
-}
+    },
+  }),
+};

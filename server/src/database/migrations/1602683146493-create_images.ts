@@ -1,38 +1,39 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+/* eslint-disable class-methods-use-this */
+/* eslint-disable import/prefer-default-export */
+import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export class createImages1602683146493 implements MigrationInterface {
-
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(new Table({
       name: 'images',
       columns: [
         {
-          name: "id",
-          type: "integer",
+          name: 'id',
+          type: 'integer',
           unsigned: true,
           isPrimary: true,
           isGenerated: true,
-          generationStrategy: 'increment'
+          generationStrategy: 'increment',
         },
         {
-          name: "path",
-          type: "varchar"
+          name: 'path',
+          type: 'varchar',
         },
         {
-          name: "orphanage_id",
-          type: "integer"
-        }
+          name: 'orphanage_id',
+          type: 'integer',
+        },
       ],
       foreignKeys: [
         {
-          name: "ImageOrphanage",
+          name: 'ImageOrphanage',
           columnNames: ['orphanage_id'],
           referencedTableName: 'orphanages',
           referencedColumnNames: ['id'],
           onUpdate: 'CASCADE',
           onDelete: 'CASCADE',
-        }
-      ]
+        },
+      ],
     }));
   }
 

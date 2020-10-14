@@ -1,58 +1,58 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+/* eslint-disable class-methods-use-this */
+/* eslint-disable import/prefer-default-export */
+import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export class createOrphanages1602624262059 implements MigrationInterface {
-
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(new Table({
-      name: "orphanages",
+      name: 'orphanages',
       columns: [
         {
-          name: "id",
-          type: "integer",
+          name: 'id',
+          type: 'integer',
           unsigned: true,
           isPrimary: true,
           isGenerated: true,
-          generationStrategy: 'increment'
+          generationStrategy: 'increment',
         },
         {
-          name: "name",
-          type: "varchar"
+          name: 'name',
+          type: 'varchar',
         },
         {
-          name: "latitude",
-          type: "decimal",
+          name: 'latitude',
+          type: 'decimal',
           scale: 10,
-          precision: 2, 
+          precision: 2,
         },
         {
-          name: "longitude",
-          type: "decimal",
+          name: 'longitude',
+          type: 'decimal',
           scale: 10,
-          precision: 2, 
+          precision: 2,
         },
         {
-          name: "about",
-          type: "text"
+          name: 'about',
+          type: 'text',
         },
         {
-          name: "instructions",
-          type: "text"
+          name: 'instructions',
+          type: 'text',
         },
         {
-          name: "opening_hours",
-          type: "varchar"
+          name: 'opening_hours',
+          type: 'varchar',
         },
         {
-          name: "open_on_weekends",
-          type: "boolean",
-          default: false
-        }
-      ]
+          name: 'open_on_weekends',
+          type: 'boolean',
+          default: false,
+        },
+      ],
     }));
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropTable("orphanages");
+    await queryRunner.dropTable('orphanages');
   }
-
 }
