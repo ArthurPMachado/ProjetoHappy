@@ -3,13 +3,20 @@
 import React from 'react';
 import MapView, { Marker, Callout, PROVIDER_GOOGLE } from 'react-native-maps';
 import { Feather } from '@expo/vector-icons';
-
+import { useNavigation } from '@react-navigation/native';
 import {
   View, Text, TouchableOpacity, Dimensions, StyleSheet,
 } from 'react-native';
+
 import mapMarker from '../images/map-marker.png';
 
 function OrphanagesMap() {
+  const navigation = useNavigation();
+
+  function handleNavigateToOrphanageDetails() {
+    navigation.navigate('OrphanagesDetails');
+  }
+
   return (
     <View style={styles.container}>
       <MapView
@@ -33,7 +40,7 @@ function OrphanagesMap() {
             longitude: -46.5656102,
           }}
         >
-          <Callout tooltip onPress={() => {}}>
+          <Callout tooltip onPress={handleNavigateToOrphanageDetails}>
             <View style={styles.calloutContainer}>
               <Text style={styles.calloutText}>Lar das meninas</Text>
             </View>
