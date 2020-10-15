@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
 /* eslint-disable no-use-before-define */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
@@ -6,19 +8,11 @@ import { Link } from 'react-router-dom';
 import {
   Map, Marker, Popup, TileLayer,
 } from 'react-leaflet';
-import Leaflet from 'leaflet';
 
 import mapMarkerImg from '../assets/images/map-marker.svg';
+import mapIcon from '../utils/mapIcon';
 
 import '../styles/pages/orphanages-map.css';
-import 'leaflet/dist/leaflet.css';
-
-const mapIcon = Leaflet.icon({
-  iconUrl: mapMarkerImg,
-  iconSize: [58, 68],
-  iconAnchor: [29, 68],
-  popupAnchor: [170, 2],
-});
 
 function OrphanagesMap() {
   return (
