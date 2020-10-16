@@ -5,7 +5,7 @@ import MapView, { Marker, Callout, PROVIDER_GOOGLE } from 'react-native-maps';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import {
-  View, Text, TouchableOpacity, Dimensions, StyleSheet,
+  View, Text, Dimensions, StyleSheet,
 } from 'react-native';
 
 import { RectButton } from 'react-native-gesture-handler';
