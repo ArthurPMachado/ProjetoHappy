@@ -3,10 +3,10 @@
 /* eslint-disable import/extensions */
 /* eslint-disable no-use-before-define */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import MapView, { Marker, Callout, PROVIDER_GOOGLE } from 'react-native-maps';
 import { Feather } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import {
   View, Text, Dimensions, StyleSheet,
 } from 'react-native';
@@ -27,11 +27,11 @@ function OrphanagesMap() {
 
   const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
 
-  useEffect(() => {
+  useFocusEffect(() => {
     api.get('/orphanages').then((response) => {
       setOrphanages(response.data);
     });
-  }, []);
+  });
 
   function handleNavigateToOrphanageDetails(id: number) {
     navigation.navigate('OrphanagesDetails', { id });
