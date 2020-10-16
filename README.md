@@ -32,7 +32,7 @@
 * [Licença](#scroll-licença)
 
 # :recycle: Sobre
-A aplicação está sendo desenvolvida com o objetivo de facilitar o agendamento de visitas à orfanatos, onde a pessoa pode escolher o orfanato pelo mapa e agendar a visita através de um formulário, bem como saber mais detalhes sobre o orfanato. Esse projeto terá uma versão browser e mobile. 
+A aplicação tem como objetivo a de facilitar o agendamento de visitas à orfanatos, onde a pessoa pode escolher o orfanato pelo mapa e agendar a visita através de um formulário, bem como saber mais detalhes sobre o orfanato. Esse projeto possui uma versão browser e mobile. 
 
 # :clipboard: Tecnologias Utilizadas
 * [Yarn](https://yarnpkg.com/)
