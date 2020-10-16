@@ -6,7 +6,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "npx eslint ./src/pages/** ./App.tsx ./src/routes.tsx --fix"
+    "lint": "npx eslint ./src/pages/** ./src/components/** ./App.tsx ./src/routes.tsx --fix"
   },
   "dependencies": {
     "@expo-google-fonts/nunito": "^0.1.0",
